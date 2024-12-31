@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        form input, form textarea, form button {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            padding: 8px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Multi-Page Website</h1>
+    <nav>
+        <a href="#homepage">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+        <a href="#custom">Custom Page</a>
+    </nav>
+</header>
+
+<section id="homepage">
+    <h2>Welcome to Our Homepage</h2>
+    <p>This is the introductory section of the website. Here, we provide an overview of our company and services.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Homepage Image">
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <table>
+        <tr>
+            <td>
+                <img src="https://via.placeholder.com/150" alt="Product 1" style="width:150px;"><br>
+                <button>Add to Cart</button>
+            </td>
+            <td>
+                <img src="https://via.placeholder.com/150" alt="Product 2" style="width:150px;"><br>
+                <button>Add to Cart</button>
+            </td>
+            <td>
+                <img src="https://via.placeholder.com/150" alt="Product 3" style="width:150px;"><br>
+                <button>Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a company dedicated to providing the best services to our customers.</p>
+    <img src="https://via.placeholder.com/800x400" alt="About Us Image">
+    <h3>Contact Us</h3>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<section id="custom">
+    <h2>Custom Page</h2>
+    <h3>Customer Testimonials</h3>
+    <blockquote>
+        "This service is amazing! Highly recommend." - John Doe
+    </blockquote>
+    <blockquote>
+        "Excellent quality and customer care." - Jane Smith
+    </blockquote>
+    <img src="https://via.placeholder.com/800x400" alt="Custom Page Image">
+</section>
+
+<footer>
+    <p>&copy; 2024 My Multi-Page Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
